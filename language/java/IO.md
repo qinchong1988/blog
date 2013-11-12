@@ -1,6 +1,6 @@
 java IO 目录
 -----
-1. [SystemDemo][#SystemDemo] 其他对象 System。
+1. [SystemDemo](#systemDemo) 其他对象 System。
 
 2. RuntimeDemo
 
