@@ -1,6 +1,6 @@
 java IO 目录
 -----
-1. SystemDemo 其他对象 System。
+1. [SystemDemo][#SystemDemo] 其他对象 System。
 
 2. RuntimeDemo
 
@@ -26,8 +26,7 @@ java IO 目录
 
 13. CopyTest 文件复制
 
-SystemDemo
-----------
+## SystemDemo
 ```java
 import java.util.Properties;
 
