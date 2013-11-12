@@ -1,7 +1,7 @@
 ﻿java IO 目录
 -----
-* [SystemDemo](#systemDemo) 其他对象 System。
-* [RuntimeDemo](#runtime)
+* [SystemDemo](#systemdemo) 其他对象 System。
+* [RuntimeDemo](#runtimedemo)
 * DateDemo 日期类
 * CalendarDemo 日期 
 * CalendarDemo2 练习
