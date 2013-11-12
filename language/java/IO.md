@@ -1,30 +1,18 @@
 ﻿java IO 目录
 -----
-1. [SystemDemo](#systemDemo) 其他对象 System。
-
-2. RuntimeDemo
-
-3. DateDemo 日期类
-
-4. CalendarDemo 日期 
-
-5. CalendarDemo2 练习
-
-6. MathDemo ，工具类Math 和Random
-
-7. FileWriterDemo 文件写
-
-8. FileWriterDemo2 IO异常的处理方式
-
-9. FileWriterDemo3 文件续写
-
-10. FileReaderDemo 文本文件读取方式一；
-
-11. FileReaderDemo2 文本文件读取方式二；int read(char[] cbuf) 
-
-12. FileReaderTest 文本文件读写练习：
-
-13. CopyTest 文件复制
+* [SystemDemo](#systemDemo) 其他对象 System。
+* [RuntimeDemo](#runtime)
+* DateDemo 日期类
+* CalendarDemo 日期 
+* CalendarDemo2 练习
+* MathDemo ，工具类Math 和Random
+* FileWriterDemo 文件写
+* FileWriterDemo2 IO异常的处理方式
+* FileWriterDemo3 文件续写
+* FileReaderDemo 文本文件读取方式一；
+* FileReaderDemo2 文本文件读取方式二；int read(char[] cbuf) 
+* FileReaderTest 文本文件读写练习：
+* CopyTest 文件复制
 
 ## SystemDemo
 ```java
@@ -58,5 +46,29 @@ public class SystemDemo {
 			System.out.println(key + "::" + value);
 		}
 	}
+}
+```
+
+## RuntimeDemo
+```java
+/*
+ * Runtime对象，该类并没有提供构造函数
+ * 说明不可以new对象，那么会直接想到该类中的方法都是静态的。
+ * 发现该类中还有非静态方法。
+ * 说明该类肯定会提供方法获取本类对象，而且该方法是静态的，并返回值类型是本类类型。
+ * 
+ * 由这个特点可以看出该类使用了单例设计模式
+ * 该方式是 static Runtime getRuntime();
+ */
+public class RuntimeDemo {
+ 
+	public static void main(String[] args) throws Exception {
+	   Runtime r = Runtime.getRuntime();
+	   Process p  =r.exec("notepad.exe RuntimeDemo.java");
+	   
+	   //Thread.sleep(4000);
+	   //p.destory();
+	}
+
 }
 ```
