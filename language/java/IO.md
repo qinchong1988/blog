@@ -1,55 +1,55 @@
-java IO Ä¿Â¼
+ï»¿java IO ç›®å½•
 -----
-1. [SystemDemo](#systemDemo) ÆäËû¶ÔÏó System¡£
+1. [SystemDemo](#systemDemo) å…¶ä»–å¯¹è±¡ Systemã€‚
 
 2. RuntimeDemo
 
-3. DateDemo ÈÕÆÚÀà
+3. DateDemo æ—¥æœŸç±»
 
-4. CalendarDemo ÈÕÆÚ 
+4. CalendarDemo æ—¥æœŸ 
 
-5. CalendarDemo2 Á·Ï°
+5. CalendarDemo2 ç»ƒä¹ 
 
-6. MathDemo £¬¹¤¾ßÀàMath ºÍRandom
+6. MathDemo ï¼Œå·¥å…·ç±»Math å’ŒRandom
 
-7. FileWriterDemo ÎÄ¼şĞ´
+7. FileWriterDemo æ–‡ä»¶å†™
 
-8. FileWriterDemo2 IOÒì³£µÄ´¦Àí·½Ê½
+8. FileWriterDemo2 IOå¼‚å¸¸çš„å¤„ç†æ–¹å¼
 
-9. FileWriterDemo3 ÎÄ¼şĞøĞ´
+9. FileWriterDemo3 æ–‡ä»¶ç»­å†™
 
-10. FileReaderDemo ÎÄ±¾ÎÄ¼ş¶ÁÈ¡·½Ê½Ò»£»
+10. FileReaderDemo æ–‡æœ¬æ–‡ä»¶è¯»å–æ–¹å¼ä¸€ï¼›
 
-11. FileReaderDemo2 ÎÄ±¾ÎÄ¼ş¶ÁÈ¡·½Ê½¶ş£»int read(char[] cbuf) 
+11. FileReaderDemo2 æ–‡æœ¬æ–‡ä»¶è¯»å–æ–¹å¼äºŒï¼›int read(char[] cbuf) 
 
-12. FileReaderTest ÎÄ±¾ÎÄ¼ş¶ÁĞ´Á·Ï°£º
+12. FileReaderTest æ–‡æœ¬æ–‡ä»¶è¯»å†™ç»ƒä¹ ï¼š
 
-13. CopyTest ÎÄ¼ş¸´ÖÆ
+13. CopyTest æ–‡ä»¶å¤åˆ¶
 
 ## SystemDemo
 ```java
 import java.util.Properties;
 
 /*
- * System:ÀàÖĞµÄ·½·¨ºÍÊôĞÔ¶¼ÊÇ¾²Ì¬µÄ¡£
- * out£º±ê×¼Êä³ö£¬Ä¬ÈÏÊÇ¿ØÖÆÌ¨
- * in:±ê×¼ÊäÈë£¬Ä¬ÈÏÊÇ¼üÅÌ
+ * System:ç±»ä¸­çš„æ–¹æ³•å’Œå±æ€§éƒ½æ˜¯é™æ€çš„ã€‚
+ * outï¼šæ ‡å‡†è¾“å‡ºï¼Œé»˜è®¤æ˜¯æ§åˆ¶å°
+ * in:æ ‡å‡†è¾“å…¥ï¼Œé»˜è®¤æ˜¯é”®ç›˜
  * 
- * ÃèÊöÏµÍ³Ò»Ğ©ĞÅÏ¢;
+ * æè¿°ç³»ç»Ÿä¸€äº›ä¿¡æ¯;
  * 
- * »ñÈ¡ÏµÍ³ÊôĞÔĞÅÏ¢
+ * è·å–ç³»ç»Ÿå±æ€§ä¿¡æ¯
  * public static Properties getProperties()
  */
 public class SystemDemo {
 	public static void main(String[] args) {
 		Properties prop = System.getProperties();
-		// ÒòÎªPropertiesÊÇHashTableµÄ×ÓÀà£¬Ò²¾ÍÊÇMap¼¯ºÏµÄÒ»¸ö×ÓÀà¶ÔÏó
-		// ÄÇÃ´¿ÉÒÔÍ¨¹ımapµÄ·½·¨È¡³ö¸Ã¼¯ºÏÖĞµÄÔªËØ
-		// ¸Ã¼¯ºÏÖĞ´æ´¢µÄ¶¼ÊÇ×Ö·û´®£¬Ã»ÓĞ·ºĞÍ¶¨Òå
+		// å› ä¸ºPropertiesæ˜¯HashTableçš„å­ç±»ï¼Œä¹Ÿå°±æ˜¯Mapé›†åˆçš„ä¸€ä¸ªå­ç±»å¯¹è±¡
+		// é‚£ä¹ˆå¯ä»¥é€šè¿‡mapçš„æ–¹æ³•å–å‡ºè¯¥é›†åˆä¸­çš„å…ƒç´ 
+		// è¯¥é›†åˆä¸­å­˜å‚¨çš„éƒ½æ˜¯å­—ç¬¦ä¸²ï¼Œæ²¡æœ‰æ³›å‹å®šä¹‰
 
-		// ÈçºÎÔÚÏµÍ³ÖĞ×Ô¶¨ÒåÒ»Ğ©ÌØÓĞĞÅÏ¢ÄØ£¿
+		// å¦‚ä½•åœ¨ç³»ç»Ÿä¸­è‡ªå®šä¹‰ä¸€äº›ç‰¹æœ‰ä¿¡æ¯å‘¢ï¼Ÿ
 //		System.setProperty("mykey", "myvalue");
-		// ¿É²»¿ÉÒÔÔÚjvmÆô¶¯Ê±£¬¶¯Ì¬µÄ¼ÓÔØÒ»Ğ©ÊôĞÔĞÅÏ¢ÄØ£¿
+		// å¯ä¸å¯ä»¥åœ¨jvmå¯åŠ¨æ—¶ï¼ŒåŠ¨æ€çš„åŠ è½½ä¸€äº›å±æ€§ä¿¡æ¯å‘¢ï¼Ÿ
 		String v = System.getProperty("haha");
 		System.out.println("v=" + v);
 
