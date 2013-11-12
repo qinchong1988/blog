@@ -1,4 +1,5 @@
-blog
+本人的技术博客
 ====
 
-markdown博客
+姓名：啊冲
+邮箱: qinchong1988@gmail.com
