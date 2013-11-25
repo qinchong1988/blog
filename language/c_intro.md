@@ -144,3 +144,29 @@ void main()
 
 }
 ```
+
+###### sizeOf 用法
+size of 是单目运算符，用来计算操作数在内存中占据的字节数，其操作数既可以是括在括号中的类型标识符，其返回值是size_t类型，即无符号整数，
+如
+
+```c
+sizeof(short)
+sizeof(long)
+sizeof(int)
+short x;
+sizeof(x)
+sizeof(x+1)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
