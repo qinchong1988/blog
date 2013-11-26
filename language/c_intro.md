@@ -150,15 +150,41 @@ size of 是单目运算符，用来计算操作数在内存中占据的字节数
 如
 
 ```c
-sizeof(short)
-sizeof(long)
-sizeof(int)
+sizeof(short) ;                   /**返回2**/
+sizeof(long)  ;                   /**返回4**/
+sizeof(int);                       /**不确定，取决于不同系统**/
+也可以是一个表达式，如:
 short x;
 sizeof(x)
-sizeof(x+1)
+sizeof(x+1)                      /**返回2**/
 ```
 
+###### 补码与源码
+![]{images/1.BMP}
+![]{images/2.BMP}
+```c
+#include "stdafx.h"
 
+void main(){
+	char hj = -1;
+	char jh = 1;
+	printf("%x,%x",&hj,&jh);//按照十六进制打印出hj,jh的地址
+
+	printf("\n");
+
+	int hn = -1;
+	printf("%d,%u,%x",hn,hn,&hn);//%d按照有符号十进制打印出来
+								 //%u无符号十进制整数打印出来
+								 //%x按照十六进制打印出地址
+	//查看控制台打印出来的结果如下：
+	//-1,4294967295,3af724
+
+	//无符号的整数都是按照原码来表示的，同时没有符号位，只有正整数与0
+	//有符号的整数，负数是补码，正整数与源码一样
+	getchar();
+}
+
+```
 
 
 
