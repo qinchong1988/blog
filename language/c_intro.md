@@ -160,8 +160,8 @@ sizeof(x+1)                      /**返回2**/
 ```
 
 ###### 补码与源码
-![]{images/1.BMP}
-![]{images/2.BMP}
+![]{images/1.jpg}
+![]{images/2.jpg}
 ```c
 #include "stdafx.h"
 
