@@ -7,7 +7,11 @@
         - [C语言介绍](language/c_intro.md)
      - java
         - [java IO](language/java/IO.md)
-
+     - System
+	- [Ubuntu](system/Ubuntu.md)
+     - tools
+	- [git](tools/git.md)
+	- [vim](tools/vim.md)
 
 
 获得有关Android开发技术的消息
