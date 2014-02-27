@@ -164,7 +164,6 @@ sizeof(x+1)                      /**返回2**/
 ![](images/2.jpg)
 ```c
 #include "stdafx.h"
-
 void main(){
 	char hj = -1;
 	char jh = 1;
