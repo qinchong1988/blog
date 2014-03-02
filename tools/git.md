@@ -1,4 +1,37 @@
 #Git指令快速查看
+
+### 2.4 Git 基础 - 撤消操作
+
+```http://git-scm.com/book/zh/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C```
+
+* 修改最后一次提交```$ git commit --amend```
+* 取消已经暂存的文件```$ git reset HEAD benchmarks.rb```
+* 取消对文件的修改```$ git checkout -- benchmarks.rb```
+
+### 2.5 Git 基础 - 远程仓库的使用
+* 查看当前配置有哪些远程仓库，可以用```git remote```命令(可以加上```-v```)
+* 添加远程仓库```git remote add [shortname] [url]```
+
+  ```$ git remote add pb git://github.com/paulboone/ticgit.git```
+  
+* 抓取所有 Paul 有的，但本地仓库没有的信息```git fetch pb```
+* 从远程仓库抓取数据```$ git fetch [remote-name]```
+* 推送数据到远程仓库```git push [remote-name] [branch-name]```
+* 查看远程仓库信息```git remote show [remote-name]```
+
+  ```
+  $ git remote show origin
+  * remote origin
+  URL: git://github.com/schacon/ticgit.git
+  Remote branch merged with 'git pull' while on branch master
+    master
+  Tracked remote branches
+    master
+    ticgit
+    ```
+* 远程仓库的重命名和删除```$ git remote rename pb paul``` and ```git remote rm paul```
+
+
 ### 3.1 何为分支
 
 * Git创建分支```git branch testing```
@@ -80,6 +113,8 @@
 
 ### 3.6 Git 分支 - 分支的衍合
 
+```http://git-scm.com/book/zh/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E8%A1%8D%E5%90%88```
+
 * rebase的例子
 
 	```
@@ -88,5 +123,7 @@
 	First, rewinding head to replay your work on top of it...
 	Applying: added staged command
 	```
+	
+	
 
   
