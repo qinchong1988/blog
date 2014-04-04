@@ -3,13 +3,15 @@
 邮箱: qinchong1988@gmail.com
 
 - 编程语言
-     - C语言
+    - C语言
         - [C语言介绍](language/c_intro.md)
-     - java
-        - [java IO](language/java/IO.md)
-     - System
+    - java
+    	- [java IO](language/java/IO.md)
+    - lua
+    	- [Hello Lua](language/lua/helloworld.md)
+- System
 	- [Ubuntu](system/Ubuntu.md)
-     - tools
+- tools
 	- [git](tools/git.md)
 	- [vim](tools/vim.md)
 
