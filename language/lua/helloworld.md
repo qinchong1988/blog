@@ -121,3 +121,52 @@ for k,v in pairs(mytable) do
 end
 
 ```
+
+### IO 
+
+1.写文件的方式
+
+```
+file  = io.open("t.txt",'r')
+myText = "Hello"
+file:write(myText)
+file:close
+
+local function read_files(fileName)
+	-- 参数r表示只读方式打开，a表示追加，w表示写入，b表示打开二进制
+    local f = assert(io.open(fileName,'r'))
+    -- \*all 表示读取所有的文件内容,\*line表示读取一行，
+    -- \*number读取一个数字 或者<num>读取一个不超过<num>个数的字符
+	local content = f:read("*all")
+    f:close
+    return content
+end
+
+local rlt = read_files("nameList.txt")
+print(rlt)
+
+```
+
+2.读文件的方式
+
+```
+  local f  = assert(io.open("t.txt",'a'))
+  local string = f:read("*all")
+  f:close()
+  
+  local function write_content(fileName,content)
+  	local f = assert(io.open(fileName,'a'))
+  	f:write(content)
+  	f:close()
+  end
+  
+  write_content("ok.txt","Hello world\n")
+  
+  local long_txt ={
+  	this is a long text
+  }
+  
+  write_content("ok.txt",long_txt)
+  
+```  
+
