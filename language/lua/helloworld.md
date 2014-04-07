@@ -38,7 +38,9 @@ print("hello world")
 
 1. 打开 Sublime Text 2，按下 Control + ` 调出 Console
 2. 将以下代码粘贴进命令行中并回车：
-	>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ',' ')).read()); print 'Please restart Sublime Text to finish installation'
+
+>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ',' ')).read()); print 'Please restart Sublime Text to finish installation'
+
 3. 关闭并再一次打开sublime text，并command＋shift＋p 调出插件配置。
 4. 输入 instal  等待Download 可安装的插件列表
 5. 输入lua 查找，找到后选中并回车键确认，等待安装
