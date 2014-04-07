@@ -8,6 +8,7 @@
     - java
     	- [java IO](language/java/IO.md)
     - lua
+    	- [使用Sublime搭建开发环境](language/lua/workspace.md)
     	- [Hello Lua](language/lua/helloworld.md)
 - System
 	- [Ubuntu](system/Ubuntu.md)
