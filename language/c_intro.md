@@ -198,6 +198,31 @@ void main(){
 - %e ---- 以标准指数形式输出单、双精度实数
 - %g ---- 选用输出宽度较小的格式输出实数
 
+###### 结构体
+定义结构体形式
+```c
+//定义结构体
+struct People{
+    int age;
+    char* name;
+};
+```
+接下来我们书写一个方法测试一下
+```c
+void structTest(void)
+{
+    struct People p ;
+    p.age = 10;
+    p.name = "xiao l";
+    
+    printf("age:%d\n",p.age);
+    
+    struct People p1 = p;//修改p的值不会再影响到p1，p1是做了内存拷贝的
+    p.age =20;
+    
+    printf("age:%d\n",p1.age);
+}
+```
 
 
 
