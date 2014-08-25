@@ -2,7 +2,7 @@
 
 ### 1.1 Git config
 
-    ```
+  ```
 	[alias]
     last = log -1 HEAD
     ci = commit -a -v
@@ -11,7 +11,7 @@
     st = status
     throw = reset --hard HEAD
   	throwh = reset --hard HEAD^
-	```
+  ```
 
 ### 2.4 Git 基础-[撤消操作](http://git-scm.com/book/zh/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C)
 
