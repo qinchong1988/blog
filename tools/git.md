@@ -15,7 +15,7 @@
 
 ### 1.2 Git hotfix小技巧
 
-  当在开发的时候突然发现一个小bug，但是自己的feature又开发到一半，这个时候可以使用git stash暂存之前的修改HotFix之后在利用git stash apply
+  当在开发的时候突然发现一个小bug，但是自己的feature又开发到一半，这个时候可以使用git stash暂存之前的修改,待HotFix之后在利用git stash apply
   还原之前的开发.
 
 ### 2.4 Git 基础-[撤消操作](http://git-scm.com/book/zh/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C)
