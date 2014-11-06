@@ -11,6 +11,7 @@
     	- [使用Sublime搭建开发环境](language/lua/workspace.md)
     	- [Hello Lua](language/lua/helloworld.md)
     - go
+    	- [go byte and string](language/go/byte_string.md)
         - [go web 之Http](language/go/web_http.md)
 - System
 	- [Ubuntu](system/Ubuntu.md)
