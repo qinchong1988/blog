@@ -8,7 +8,7 @@
 
 ##### 首先来看一个反射的基本上使用，主要用到了```reflect.TypeOf()```月```reflect.ValueOf()```
 
-```golang
+```go
 
 package test
 
@@ -72,7 +72,7 @@ Fields:
 ##### 接下来我们分析一下匿名字段
 我们在定义个Manager类型
 
-```golang
+```go
 
 type Manager struct {
 	User  //匿名字段
@@ -98,7 +98,7 @@ reflect.StructField{Name:"Id", PkgPath:"", Type:(*reflect.rtype)(0x246ac0), Tag:
 
 如果想要修改某一个变量的值可以按下面的操作
 
-```golang
+```go
 
 func main(){
     x := 123
@@ -134,7 +134,7 @@ func set(o interface{}) {
 
 下面演示下方法的调用
 
-```golang
+```go
 
 func (u User) Hello2(name string) {
 	fmt.Println("Hello", name, ", my name is ", u.Name)
