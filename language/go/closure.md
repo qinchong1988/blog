@@ -31,3 +31,17 @@ func closure(x int) func(int) int {
 12
 
 ```
+
+闭包注意事项
+
+1. 闭包中引用的外部变量是地址的形式
+
+```go
+for i := 0 ; i < 3 ; i++ {
+    defer func(){
+        fmt.Println(i)
+    }()
+}
+```
+
+该函数会输出3个3
