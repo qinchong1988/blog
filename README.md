@@ -14,6 +14,7 @@
         - [go byte and string](language/go/byte_string.md)
         - [go web 之Http](language/go/web_http.md)
         - [go reflect](language/go/reflect.md)
+        - [go 闭包](language/go/closure.md)
 - System
 	- [Ubuntu](system/Ubuntu.md)
 - tools
