@@ -2,6 +2,12 @@
 
 ### 1.1 Git config
 
+git https 无法获取，请配置本地的 git，关闭 https 验证
+
+```
+git config --global http.sslVerify false
+```
+
   ```
 	[alias]
     last = log -1 HEAD

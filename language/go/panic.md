@@ -28,6 +28,7 @@ func C() {
 ```
 
 结果
+
 ```
 Func A
 catch panic B
