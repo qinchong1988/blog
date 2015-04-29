@@ -19,7 +19,9 @@
 - System
 	- [Ubuntu](system/Ubuntu.md)
 - tools
-	- [git](tools/git.md)
+	- git
+		- [git into](tools/git.md)
+		- [gitignore files](tools/gitignore.md)
 	- [vim](tools/vim.md)
 
 
